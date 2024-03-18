@@ -1,0 +1,19 @@
+{
+  "name": "@larshp/jsonschema-rs-wasm",
+  "version": "0.0.1",
+  "description": "todo",
+  "main": "pkg/scrypt_rs_wasm.js",
+  "scripts": {
+    "pub_in_pkg": "npm --no-git-tag-version version patch && npm publish",
+    "debugbuild": "rm -rf pkg && wasm-pack build --debug --target nodejs && node index.mjs",
+    "test": "rm -rf pkg && wasm-pack build --scope larshp --target nodejs && node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abap-wasm/jsonschema-rs-wasm"
+  },
+  "devDependencies": {
+  },
+  "author": "Lars Hvam",
+  "license": "MIT"
+}
