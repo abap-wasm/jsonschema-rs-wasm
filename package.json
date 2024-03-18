@@ -4,7 +4,7 @@
   "description": "todo",
   "main": "pkg/scrypt_rs_wasm.js",
   "scripts": {
-    "pub_in_pkg": "npm --no-git-tag-version version patch && npm publish",
+    "pub_in_pkg": "npm --no-git-tag-version version patch && npm publish --access public",
     "debugbuild": "rm -rf pkg && wasm-pack build --debug --target nodejs && node index.mjs",
     "test": "rm -rf pkg && wasm-pack build --scope larshp --target nodejs && node index.mjs"
   },

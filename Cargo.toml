@@ -1,6 +1,6 @@
 [package]
 name = "jsonschema-rs-wasm"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["Lars Hvam"]
 edition = "2018"
 rust-version = "1.76"
