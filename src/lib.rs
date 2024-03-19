@@ -4,6 +4,8 @@ use serde_json::json;
 
 #[wasm_bindgen]
 pub fn main() -> String {
+    console_error_panic_hook::set_once();
+
     let schema = json!({"maxLength": 5});
     let instance = json!("fosssso");
     let compiled = JSONSchema::compile(&schema).expect("A valid schema");
